@@ -1,38 +1,80 @@
-# FindDev
+# Merged Frontend
 
-This template should help get you started developing with Vue 3 in Vite.
+This is the frontend application for **Merged**, a real-time chat and networking platform. It's built with modern web technologies including **Vue 3**, **Vite**, **TailwindCSS v4**, **Pinia**, and **Socket.io**.
+
+## Features
+
+- **User Authentication**: Secure login and registration.
+- **Real-Time Chat**: Live messaging powered by Socket.io and real-time backend updates.
+- **Profile Management**: View and edit user profiles.
+- **Dynamic Routing**: Client-side routing managed by Vue Router.
+- **Responsive UI**: Modern, clean interface styled with TailwindCSS v4.
+
+## Tech Stack
+
+- **Framework:** Vue 3 (Composition API)
+- **Bundler:** Vite
+- **Styling:** TailwindCSS v4
+- **State Management:** Pinia
+- **Routing:** Vue Router
+- **WebSockets:** socket.io-client
+
+## Project Structure
+
+- `src/components/`: Vue components including Chat, Sidebar, Navbar, and Home.
+- `src/auth/`: Authentication utilities and state.
+- `src/router/`: Vue Router configurations.
+- `src/websockets/`: Socket.io client setup and configuration.
+- `src/assets/`: Global CSS and static assets.
+
+## Environment Variables
+
+To run the application properly, you will need a `.env` file in the root directory.
+
+```env
+VITE_BACKEND_API=
+```
 
 ## Recommended IDE Setup
 
 [VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
 
-## Recommended Browser Setup
+## Prerequisites
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+Ensure you have the following installed on your local machine before setting up the project:
+- **Node.js**: `v22.18.0` or `>= v24.12.0` (as specified in package.json)
+- **npm** (comes with Node.js) or **yarn** / **pnpm**
 
-## Customize configuration
+## Getting Started
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+Follow these steps to set up the project locally.
 
-## Project Setup
+### 1. Cloning Project
+
+```sh
+git clone https://github.com/gmhazza/Megred-front.git
+cd Megred-front
+```
+
+### 2. Install Dependencies
 
 ```sh
 npm install
 ```
 
-### Compile and Hot-Reload for Development
+### 3. Start Development Server
 
 ```sh
 npm run dev
 ```
+The application should now be running locally, typically on `http://localhost:5173`.
 
-### Compile and Minify for Production
 
-```sh
-npm run build
-```
+## Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
